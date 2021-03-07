@@ -90,7 +90,7 @@ h6{
 }
 .bar-danger{
 	padding:2px;
-	background-image: linear-gradient(to right, #ff4b91 , #ff1adf);
+	background-image: linear-gradient(to right, #ff6050,#ff00ff);
 	border-radius: 5px; 
 	width:45%;
 	margin:10px auto;
