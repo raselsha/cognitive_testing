@@ -34,18 +34,15 @@
                 <p class="meta">Age/Sex:70/F <span>&#9830;</span> Dateofbirth:09/08/1999 <span>&#9830;</span> Assessment date: 03/02/2021</p>
             </div>
             <div class="col-2">
-              <p class="text-right">
-                <img src="images/01-assess.png" class="float-right img-fluid">
-              </p>
-                
+                <img src="images/01-assess.png" class="float-right img-fluid">                
             </div>
           </div>
       </header>
       <main>
-        <section id="hero ">
-          <div class="row mt-4">
+        <section id="hero">
+          <div class="row">
             <div class="col-12">
-                <div class="card ">
+                <div class="card">
                   <div class="card-header bg-primary">
                     <div class="display-4 text-center text-white">Cognitive Test Results</div>
                   </div>
@@ -74,15 +71,16 @@
             <div class="col-4">
               <h1 class="text-center text-danger"><i class="fas fa-check-circle"></i></h1>
               <h3 class="text-center">Below Expected</h3>
-              <p class="text-center">0-8th percentile</p>
-              <div class="container">
+              <p class="text-center percentile">0-8th percentile</p>
+              <div class="bar-danger"></div>
+              <div class="container mt-4">
                 <div class="row no-gutters">
                   <div class="col-3 bg-danger card-left d-flex justify-content-center">
                       <div class="point bg-white"><h5 class="text-center text-primary">3</h5></div>
                   </div>
                   <div class="col-9 card-right pl-2">
-                    <h6>Inhabitation</h6>
-                    <small>Lorem ipsum dolor sit amet,</small>
+                    <h6 class="text-primary mt-2">Inhibitation</h6>
+                    <p class="small my-2">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
                   </div>
                 </div>
               </div>
@@ -90,15 +88,16 @@
             <div class="col-4">
               <h1 class="text-center text-info"><i class="fas fa-exclamation-triangle"></i></h1>
               <h3 class="text-center">Aproaching Expected</h3>
-              <p class="text-center">9-24th percentile</p>
-              <div class="container">
+              <p class="text-center percentile">9-24th percentile</p>
+              <div class="bar-danger"></div>
+              <div class="container mt-4">
                 <div class="row no-gutters">
                   <div class="col-3 bg-info card-left d-flex justify-content-center">
                       <div class="point bg-white"><h5 class="text-center text-primary">12</h5></div>
                   </div>
                   <div class="col-9 card-right pl-2">
-                    <h6>Inhabitation</h6>
-                    <small>Lorem ipsum dolor sit amet,</small>
+                    <h6 class="text-primary mt-2">Attention</h6>
+                    <p class="small my-2">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
                   </div>
                 </div>
               </div>
@@ -106,15 +105,16 @@
             <div class="col-4">
                 <h1 class="text-center text-success"><i class="fas fa-times-circle"></i></h1>
                <h3 class="text-center">Expected</h3>
-               <p class="text-center">25-100th percentile</p>
-               <div class="container">
+               <p class="text-center percentile">25-100th percentile</p>
+               <div class="bar-danger"></div>
+               <div class="container mt-4">
                  <div class="row no-gutters">
                    <div class="col-3 bg-success card-left d-flex justify-content-center">
                        <div class="point bg-white"><h5 class="text-center text-primary">73</h5></div>
                    </div>
                    <div class="col-9 card-right pl-2">
-                     <h6>Inhabitation</h6>
-                     <small>Lorem ipsum dolor sit amet,</small>
+                     <h6 class="text-primary mt-2">Executive Function</h6>
+                    <p class="small my-2">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
                    </div>
                  </div>
                </div>
@@ -124,12 +124,13 @@
         <section id="description">
           <div class="row">
             <div class="col-12">
-              <h1>Categorized Descriptions</h1>
+              <h1 class="ml-4">Categorized Descriptions</h1>
+              <div class="bar-secondary"></div>
             </div>
           </div>
           <div class="row no-gutters position-relative">
             <div class="col-9">
-              <h4 class="my-4"> <i class="fas fa-check-circle text-success"></i> Expected</h4>
+              <h3 class="my-4"> <i class="fas fa-check-circle text-success"></i> Expected</h3>
               <h6>What does this mean</h6>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -142,10 +143,10 @@
             </div>
             <div class="big-icon position-absolute"><i class="fas fa-check-circle text-success"></i></div>
           </div>
-          <hr>
+          <div class="bar-primary"></div>
           <div class="row no-gutters position-relative">
             <div class="col-9">
-              <h4 class="my-4"> <i class="fas fa-exclamation-triangle text-info"></i> Approaching Expected</h4>
+              <h3 class="my-4"> <i class="fas fa-exclamation-triangle text-info"></i> Approaching Expected</h3>
               <h6>What does this mean</h6>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -158,10 +159,10 @@
             </div>
             <div class="big-icon position-absolute"><i class="fas fa-exclamation-triangle text-info"></i></div>
           </div>
-          <hr>
+          <div class="bar-primary"></div>
           <div class="row no-gutters position-relative">
             <div class="col-9">
-              <h4 class="my-4"> <i class="fas fa-times-circle text-danger"></i> Below Expected</h4>
+              <h3 class="my-4"> <i class="fas fa-times-circle text-danger"></i> Below Expected</h3>
               <h6>What does this mean</h6>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -179,7 +180,8 @@
         <section id="explanation">
           <div class="row">
             <div class="col-12 my-4">
-              <h1>Test Explanations</h1>
+              <h1 class="ml-4">Test Explanations</h1>
+               <div class="bar-secondary"></div>
             </div>
           </div>
           <div class="row my-1 assesment" >
@@ -195,11 +197,11 @@
               </div>
             </div>
             <div class="col-9">
-              <h6>Real world meaning</h6>
+              <h5>Real world meaning</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div>
-          </div> <!-- end assesment -->
+          </div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -212,13 +214,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-9">
-              <h6>Real world meaning</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="col-9 position-relative">
+              <p class="domain-text text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              <div class="domain-bg position-absolute">
+                <img src="images/cognitiveassessm.png" width="300">
+              </div>
             </div>
           </div> <!-- end assesment -->
-          <hr>
+          <div class="space"></div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -232,11 +235,11 @@
               </div>
             </div>
             <div class="col-9">
-              <h6>Real world meaning</h6>
+              <h5>Real world meaning</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div>
-          </div> <!-- end assesment -->
+          </div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -249,13 +252,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-9">
-              <h6>Real world meaning</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="col-9 position-relative">
+              <p class="domain-text text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              <div class="domain-bg position-absolute">
+                <img src="images/cognitiveassessments.png" width="300">
+              </div>
             </div>
           </div> <!-- end assesment -->
-          <hr>
+          <div class="space"></div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -269,11 +273,11 @@
               </div>
             </div>
             <div class="col-9">
-              <h6>Real world meaning</h6>
+              <h5>Real world meaning</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div>
-          </div> <!-- end assesment -->
+          </div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -286,13 +290,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-9">
-              <h6>Real world meaning</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="col-9 position-relative">
+              <p class="domain-text text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              <div class="domain-bg position-absolute">
+                <img src="images/cognitiveassessments-itemprice.png" width="300">
+              </div>
             </div>
           </div> <!-- end assesment -->
-          <hr>
+          <div class="space"></div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -306,11 +311,11 @@
               </div>
             </div>
             <div class="col-9">
-              <h6>Real world meaning</h6>
+              <h5>Real world meaning</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div>
-          </div> <!-- end assesment -->
+          </div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -323,13 +328,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-9">
-              <h6>Real world meaning</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="col-9 position-relative">
+              <p class="domain-text text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              <div class="domain-bg position-absolute">
+                <img src="images/cognitiveassessments-pathpoints.png" width="300">
+              </div>
             </div>
           </div> <!-- end assesment -->
-          <hr>
+          <div class="space"></div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -343,11 +349,11 @@
               </div>
             </div>
             <div class="col-9">
-              <h6>Real world meaning</h6>
+              <h5>Real world meaning</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div>
-          </div> <!-- end assesment -->
+          </div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -360,13 +366,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-9">
-              <h6>Real world meaning</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="col-9 position-relative">
+              <p class="domain-text text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              <div class="domain-bg position-absolute">
+                <img src="images/cognitiveassessments-symbolmatch.png" width="300">
+              </div>
             </div>
           </div> <!-- end assesment -->
-          <hr>
+          <div class="space"></div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -380,11 +387,11 @@
               </div>
             </div>
             <div class="col-9">
-              <h6>Real world meaning</h6>
+              <h5>Real world meaning</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div>
-          </div> <!-- end assesment -->
+          </div>
           <div class="row my-1 assesment">
             <div class="col-3">
               <div class="card text-center">
@@ -398,15 +405,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-9">
-              <h6>Real world meaning</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="col-9 position-relative">
+              <p class="domain-text text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              <div class="domain-bg position-absolute">
+                <img src="images/cognitiveassessments-imagepairs.png" width="300">
+              </div>
             </div>
           </div> <!-- end assesment -->
-        </section>
-      </main>
-    </div>
+        </section> <!-- end explanation -->
+      </main> <!-- end main -->
+    </div> <!-- end container -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
