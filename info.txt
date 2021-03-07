@@ -1,0 +1,5 @@
+<h1>Cognitive Testing</h1>
+<i class="fas fa-check-circle"></i> <!-- f058 -->
+<i class="fas fa-exclamation-triangle"></i> <!-- f071 -->
+<i class="fas fa-times-circle"></i> <!-- f057 -->
+font-family: 'Work Sans', sans-serif;

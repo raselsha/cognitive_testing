@@ -1,0 +1,113 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+header{
+	margin-top:100px; 
+}
+h1{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:700;
+	font-size: 40px;
+	color: #1d2455;
+}
+h2{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:700;
+	font-size:36px;
+	color: #1d2455;
+}
+h3{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:700;
+	font-size:30px;
+	color: #1d2455;
+}
+h4{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:700;
+	font-size:24px;
+	color: #1d2455;
+}
+h5{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:700;
+	font-size:24px;
+	color: #2b79bb;
+}
+h6{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:700;
+	font-size:20px;
+	color: #2b79bb;
+}
+.para1{
+	font-size: 1.2rem;
+}
+/******************bs color and backgournd */
+.bg-primary {
+    background-color: #1d2455 !important;
+}
+.bg-success {
+    background-color: #00d9c8 !important;
+}
+.bg-info {
+    background-color: #5997f0 !important;
+}
+.bg-danger {
+    background-color: #ff10fb !important;
+}
+
+.text-primary{
+	color: #1d2455 !important;
+}
+.text-success {
+    color: #00d9c8 !important;
+}
+.text-info {
+    color: #5997f0 !important;
+}
+.text-danger {
+    color: #ff10fb !important;
+}
+/*****************bs color and backgournd */
+.meta{
+	font-size: 1.6rem;
+	color: #1d2455;
+}
+#result{
+	margin: 50px 0;
+}
+.card-left{
+	border-radius: 5px 0px 0px 5px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+}
+.card-right{
+	border-radius: 0px 5px 5px 0px;
+	border: 1px solid #d8d8d8;
+	padding: 5px;
+}
+.point{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+.point h5{
+	line-height: 50px;
+}
+
+#description{
+	margin-top: 100px;
+}
+.big-icon{
+	font-size:350px;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0.2;
+	line-height: 0;
+}
+#explanation{
+	margin: 100px 0;
+}
