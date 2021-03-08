@@ -1,52 +1,57 @@
-body .neurotrack{
-    font-family: 'Work Sans', sans-serif;
+body{
+    font-family: 'Work Sans', sans-serif !important;
 }
-.neurotrack header{
+header{
 	margin-top:100px; 
 }
-.neurotrack h1{
-	font-family: 'Work Sans', sans-serif;
+h1{
+	font-family: 'Work Sans', sans-serif !important;
 	font-weight:700;
-	font-size:2.5rem;
+	font-size:40px;
 	color: #1d2455;
 }
-.neurotrack h2{
-	font-family: 'Work Sans', sans-serif;
+h2{
+	font-family: 'Work Sans', sans-serif !important;
 	font-weight:700;
 	font-size:36px;
 	color: #1d2455;
 }
-.neurotrack h3{
-	font-family: 'Work Sans', sans-serif;
+h3{
+	font-family: 'Work Sans', sans-serif !important;
 	font-weight:700;
 	font-size:30px;
 	color: #1d2455;
 }
-.neurotrack h4{
-	font-family: 'Work Sans', sans-serif;
+h4{
+	font-family: 'Work Sans', sans-serif !important;
 	font-weight:700;
 	font-size:24px;
 	color: #1d2455;
 }
-.neurotrack h5{
-	font-family: 'Work Sans', sans-serif;
+h5{
+	font-family: 'Work Sans', sans-serif !important;
 	font-weight:700;
 	font-size:24px;
 	color: #2b79bb;
 }
-.neurotrack h6{
-	font-family: 'Work Sans', sans-serif;
+h6{
+	font-family: 'Work Sans', sans-serif !important;
 	font-weight:700;
-	font-size:1rem;
+	font-size:16px;
 	color: #2b79bb;
 }
-
+p{
+	font-size: 16px;
+}
+.small{
+	font-size: 13px;
+}
 .para1{
-	font-size: 1.2rem;
+	font-size:18px;
 }
 .space{
 	display: block;
-	padding:3rem;
+	padding:50px;
 }
 /******************bs color and backgournd */
 .bg-primary {
@@ -98,11 +103,11 @@ body .neurotrack{
 }
 /*****************header ***************/
 .meta{
-	font-size: 1.6rem;
+	font-size:26px;
 	color: #1d2455;
 }
 .meta span{
-	font-size:2rem;
+	font-size:32px;
 }
 /*****************#hero ***************/
 #hero{
@@ -131,11 +136,11 @@ body .neurotrack{
 	border-radius: 15px 15px 0 0;
 }
 .percentile{
-font-size:1.2rem;
+font-size:18px;
 margin: 0;
 }
 #result h1{
-	font-size: 3rem;
+	font-size: 48px;
 }
 .card-left{
 	border-radius: 5px 0px 0px 5px;
@@ -176,7 +181,7 @@ margin: 0;
 	margin: 100px 0;
 }
 .domain-text{
-	font-size:1.5rem;
+	font-size:24px;
 	font-weight:500;
 	font-style: italic;
 }
