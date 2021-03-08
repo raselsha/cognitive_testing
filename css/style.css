@@ -106,8 +106,15 @@ p{
 	font-size:26px;
 	color: #1d2455;
 }
-.meta span{
-	font-size:32px;
+.ruiten{
+  font-size:32px;
+}
+.meta #u_age, #u_sex, #u_dob, #exm_time{
+  font-size:26px;
+}
+#user-info{
+  margin-top:50px;
+  margin-bottom: 30px; 
 }
 /*****************#hero ***************/
 #hero{
@@ -141,6 +148,9 @@ margin: 0;
 }
 #result h1{
 	font-size: 48px;
+}
+.score-card{
+	min-height: 95px;
 }
 .card-left{
 	border-radius: 5px 0px 0px 5px;

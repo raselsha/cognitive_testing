@@ -12,7 +12,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <!-- Custom css -->
-    <link rel="stylesheet" href="https://scoresreportpublic.s3.amazonaws.com/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <title>Neurotrack Results</title>
 
@@ -28,10 +28,11 @@
               <h1 class="pt-3 title text-right text-xs-center">Your Cognitive Testing Results</h1>
             </div>
           </div>
-          <div class="row mt-4 no-gutters">
+          <div class="row no-gutters" id="user-info">
             <div class="col-10 col-sm-12 col-md-10 col-lg-10">
-                <h1 class="pt-4 mt-4 title">FirstName LastName</h1>
-                <p class="meta">Age/Sex:70/F <span>&#9830;</span> Dateofbirth:09/08/1999 <span>&#9830;</span> Assessment date: 03/02/2021</p>
+                <h1 class="title"><span id="u_name">FirstName LastName</span></h1>
+                <p class="meta my-0">Age/Sex: <strong id="u_age">70</strong>/<strong id="u_sex">F</strong> <span class="ruiten ">&#9830;</span> Dateofbirth: <strong id="u_dob">09/08/1999</strong></p>
+                <p class="meta my-0">Assessment date: <strong id="exm_time">03/02/2021</strong> </p>
             </div>
             <div class="col-12 col-sm-12 col-md-2 col-lg-2">
                 <img src="https://scoresreportpublic.s3.amazonaws.com/images/01-assess.png" class="float-right img-fluid">                
@@ -72,13 +73,13 @@
               <p class="text-center percentile">0-8th percentile</p>
               <div class="bar-danger"></div>
               <div class="container mt-4">
-                <div class="row no-gutters">
+                <div class="row score-card no-gutters">
                   <div class="col-3 bg-danger card-left d-flex justify-content-center">
                       <div class="point bg-white"><h5 class="text-center text-primary">3</h5></div>
                   </div>
                   <div class="col-9 card-right pl-2">
                     <h6 class="text-primary mt-2">Inhibitation</h6>
-                    <p class="small my-2">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
+                    <p class="small my-2">Ability to control thoughts and actions</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +90,7 @@
               <p class="text-center percentile">9-24th percentile</p>
               <div class="bar-danger"></div>
               <div class="container mt-4">
-                <div class="row no-gutters">
+                <div class="row score-card no-gutters">
                   <div class="col-3 bg-info card-left d-flex justify-content-center">
                       <div class="point bg-white"><h5 class="text-center text-primary">12</h5></div>
                   </div>
@@ -106,7 +107,7 @@
                <p class="text-center percentile">25-100th percentile</p>
                <div class="bar-danger"></div>
                <div class="container mt-4">
-                 <div class="row no-gutters">
+                 <div class="row score-card no-gutters">
                    <div class="col-3 bg-success card-left d-flex justify-content-center">
                        <div class="point bg-white"><h5 class="text-center text-primary">73</h5></div>
                    </div>
@@ -419,6 +420,17 @@ mood issues and anxiety.</p>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-    <script src="https://scoresreportpublic.s3.amazonaws.com/js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+      setUserInfo({
+        name: 'Shahadat Hossain',
+        age: 33,
+        sex: 'M',
+        dateOfBirth: '1955-08-01',
+        examTime: '2021-03-05T20:00:00Z',
+      });
+      drawChart('#linear-gauge',80);
+      placeExamScoreCard('below', 3, 'Inhibition', 'Ability to control thoughts and actions')
+    </script>
   </body>
 </html>
