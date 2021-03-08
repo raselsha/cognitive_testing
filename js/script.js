@@ -54,12 +54,13 @@ function drawChart(container,score){
     $(container).highcharts({
             chart: {
                 type: 'lineargauge',            
-                margin: [10, 20, 40, 20],
+                margin: [10, 10, 25, 10],
                 inverted: true,
-                height:100,
+                height:80,
                 borderRadius:10,
-                borderWidth:2,
-                borderColor:'#1d2455'
+                borderWidth:1,
+                borderColor:'#1d2455',
+                backgroundColor:'#e8e8e8',
             },
             credits: {
               enabled: false
