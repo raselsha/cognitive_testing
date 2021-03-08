@@ -73,16 +73,8 @@
               <h3 class="text-center">Below Expected</h3>
               <p class="text-center percentile">0-8th percentile</p>
               <div class="bar-danger"></div>
-              <div class="container mt-4">
-                <div class="row score-card no-gutters">
-                  <div class="col-3 bg-danger card-left d-flex justify-content-center">
-                      <div class="point bg-white"><h5 class="text-center text-primary">3</h5></div>
-                  </div>
-                  <div class="col-9 card-right pl-2">
-                    <h6 class="text-primary mt-2">Inhibitation</h6>
-                    <p class="small my-2">Ability to control thoughts and actions</p>
-                  </div>
-                </div>
+              <div class="container mt-4" id="below">
+                <!-- data will generate by javascript here-->
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-4">
@@ -90,33 +82,17 @@
               <h3 class="text-center">Aproaching Expected</h3>
               <p class="text-center percentile">9-24th percentile</p>
               <div class="bar-danger"></div>
-              <div class="container mt-4">
-                <div class="row score-card no-gutters">
-                  <div class="col-3 bg-info card-left d-flex justify-content-center">
-                      <div class="point bg-white"><h5 class="text-center text-primary">12</h5></div>
-                  </div>
-                  <div class="col-9 card-right pl-2">
-                    <h6 class="text-primary mt-2">Attention</h6>
-                    <p class="small my-2">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
-                  </div>
-                </div>
+              <div class="container mt-4" id="aproach">
+                <!-- data will generate by javascript here-->
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <h1 class="text-center text-success"><i class="fas fa-times-circle"></i></h1>
+               <h1 class="text-center text-success"><i class="fas fa-times-circle"></i></h1>
                <h3 class="text-center">Expected</h3>
                <p class="text-center percentile">25-100th percentile</p>
                <div class="bar-danger"></div>
-               <div class="container mt-4">
-                 <div class="row score-card no-gutters">
-                   <div class="col-3 bg-success card-left d-flex justify-content-center">
-                       <div class="point bg-white"><h5 class="text-center text-primary">73</h5></div>
-                   </div>
-                   <div class="col-9 card-right pl-2">
-                     <h6 class="text-primary mt-2">Executive Function</h6>
-                    <p class="small my-2">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
-                   </div>
-                 </div>
+               <div class="container mt-4" id="expected">
+                 <!-- data will generate by javascript here-->
                </div>
             </div>
           </div>
@@ -423,6 +399,7 @@ mood issues and anxiety.</p>
 
     <script src="js/script.js"></script>
     <script type="text/javascript">
+      //user info 
       setUserInfo({
         name: 'Shahadat Hossain',
         age: 33,
@@ -430,8 +407,14 @@ mood issues and anxiety.</p>
         dateOfBirth: '1955-08-01',
         examTime: '2021-03-05T20:00:00Z',
       });
+      // linear-gauge generate 
       drawChart('#linear-gauge',80);
-      placeExamScoreCard('below', 3, 'Inhibition', 'Ability to control thoughts and actions')
+
+      // card generate by scroe
+      placeExamScoreCard(2, 'Title', 'Description');
+      placeExamScoreCard(20, 'Title', 'Description');
+      placeExamScoreCard(80, 'Title', 'Description');
+      placeExamScoreCard(90, 'Title', 'Description');
     </script>
   </body>
 </html>

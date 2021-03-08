@@ -156,6 +156,42 @@ function setUserInfo(userInfo){
     $('#exm_time').text(userInfo.examTime);
 }
 
-function placeExamScoreCard(){
-
+function placeExamScoreCard(score, title, description){
+    var below = '<div class="row mb-2 score-card no-gutters">'+
+                  '<div class="col-3 bg-danger card-left d-flex justify-content-center">'+
+                      '<div class="point bg-white"><h5 class="text-center text-primary">'+ score +'</h5></div>'+
+                  '</div>'+
+                  '<div class="col-9 card-right pl-2">'+
+                    '<h6 class="text-primary mt-2">'+title+'</h6>'+
+                    '<p class="small my-2">'+description+'</p>'+
+                  '</div>'+
+                '</div>';
+    var aproach = '<div class="row mb-2 score-card no-gutters">'+
+                  '<div class="col-3 bg-info card-left d-flex justify-content-center">'+
+                      '<div class="point bg-white"><h5 class="text-center text-primary">'+ score +'</h5></div>'+
+                  '</div>'+
+                  '<div class="col-9 card-right pl-2">'+
+                    '<h6 class="text-primary mt-2">'+title+'</h6>'+
+                    '<p class="small my-2">'+description+'</p>'+
+                  '</div>'+
+                '</div>';
+    var expected = '<div class="row mb-2 score-card no-gutters">'+
+                  '<div class="col-3 bg-success card-left d-flex justify-content-center">'+
+                      '<div class="point bg-white"><h5 class="text-center text-primary">'+ score +'</h5></div>'+
+                  '</div>'+
+                  '<div class="col-9 card-right pl-2">'+
+                    '<h6 class="text-primary mt-2">'+title+'</h6>'+
+                    '<p class="small my-2">'+description+'</p>'+
+                  '</div>'+
+                '</div>';  
+    if (score>=0 && score<=8) {
+       $('#below').append(below); 
+    }
+    if (score>=9 && score<=24) {
+       $('#aproach').append(aproach); 
+    }
+    if (score>=25 && score<=100) {
+       $('#expected').append(expected); 
+    }
+    
 }
